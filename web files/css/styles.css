@@ -1,0 +1,815 @@
+
+
+
+/***** PAGE ELEMENTS ****/
+
+h1 {
+	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 400;
+	font-size: 2.4em;
+}
+
+h3 {
+	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 400;
+}
+
+
+
+.wrapper {
+	width: 100%;
+	height: 200px;
+	margin: 0;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	background-color: #ff3f9f;
+	background: url('../img/pattern-alt.png') repeat center center;
+	transition: .5s ease;
+	text-align: center;
+}
+
+#wrapperAnchor {
+	color: #ee9217;
+	text-decoration: none;
+
+}
+
+.wrapper:hover,
+.wrapper:active {
+		background: url('../img/pattern-pink.png') repeat center center;
+		color: #fff;
+}
+
+
+
+.wrapper a:hover,
+.wrapper a:active {
+	color: #fff;
+}
+
+.reveal {
+	width: 100%;
+	height: 100px;
+	margin: 0;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	background-color: #ee9217;
+	background: url('../img/pattern-orange.png');
+	transition: .5s ease;
+}
+
+.reveal:hover {
+	background: url('../img/pattern-pink.png');
+}
+
+.reveal h3 {
+	color: #fff;
+}
+
+#pano {
+	display: none;
+	height: 300px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	margin: 0;
+	align-items: flex-start;
+	-webkit-align-items: flex-start;
+}
+
+#pano img {
+	height: 150%;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 1.2em;
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+.is-sticky {
+	position: relative;
+	z-index: 100000;
+}
+
+#main-menu {
+	width: 100%;
+	height: 100vh;
+	background-color: #fff;
+	position: fixed;
+	z-index: 200000;
+	margin: 0;
+	list-style-type: none;
+	display: none;
+	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+	text-align: center;
+	background: url('../img/pattern-alt.png') repeat center center;
+}
+
+
+#main-menu ul {
+	padding-left: 0;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	top: 20%;
+}
+
+#main-menu li {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+	width: 100%;
+	text-align: center;
+}
+
+
+
+.exit {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	top: 40px;
+	right: 40px;
+	transition: .5s ease-in;
+	display: none;
+}
+
+.exit:hover {
+	transform: rotate(90deg);
+}
+
+#main-menu li a {
+	width: 100%;
+	color: #ee9217;
+	font-weight: 700;
+	letter-spacing: 3px;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 15px;
+	display: none;
+	transition: .5s ease;
+}
+
+#main-menu li a:hover {
+		background-color: #ff3f9f;
+		color: #fff;
+}
+
+.main-header {
+	position: relative;
+	width: 100%;
+	min-height: 80px;
+	background-color: black;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
+	top: 0;
+	left: 0;
+	z-index: 10000;
+}
+
+.pageBlock {
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	background-color: #fff;
+
+}
+
+.imageBlock {
+	width: 100vw;
+	height: 50vh;
+	min-height: 300px;
+}
+
+
+.contentBlock {
+	text-align: justify;
+	-moz-text-align-last: center;
+	text-align-last: center;
+	color: #b2b2b2;
+	line-height: 1.5em;
+	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+	font-weight: 400;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	min-height: 400px;
+}
+
+.contentBlock p {
+	width: 90%;
+}
+
+.fullPageGallery {
+	width: 100vw;
+	min-height: 100vh;
+}
+
+.fullPageGallery-Slide {
+	width: 100%;
+	height: 100vh;
+}
+
+.fullPageGallery,
+.pageBlock {
+	z-index: 2;
+}
+
+#cboxCurrent {
+	display: none !important;
+}
+
+/**** GRID GALLERY ****/
+
+#gallery-2 {
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+
+.cboxElement {
+	width: 50%;
+	height: 25%;
+}
+
+.cboxElement img {
+	width: 100%;
+	margin-bottom: -5px;
+}
+
+#contact-contentBlock,
+#contact {
+	background-color: #ff3f9f;
+	color: #fff;
+}
+
+
+#contact-contentBlock {
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+
+
+/***** FOOTER STYLING ****/
+.slick-next {
+	color: red !important;
+	z-index: 50000000000000;
+	right: 30px;
+	bottom: 30px;
+}
+
+.slick-prev {
+	color: red !important;
+	z-index: 50000000000000;
+	left: 10px;
+	bottom: 30px;
+}
+
+#mainFooter {
+	width: 100%;
+	min-height: 200px;
+	display: flex;
+	display: -webkit-flex;
+	text-align: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	align-items: center;
+	-webkit-align-items: center;
+	background-color: #FFF;
+	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+			background: url('../img/pattern-alt.png') repeat center center;
+}
+
+#mainFooter img {
+	transition: .5s ease-in;
+}
+
+#mainFooter img:hover {
+	transform: scale(1.2);
+}
+
+#mainFooter a {
+	text-transform: uppercase;
+	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+	text-decoration: none;
+	color: #ee9217;
+	letter-spacing: 2px;
+}
+
+#mainFooter ul {
+	width: 100%;
+	margin-top: 0;
+	padding-bottom: 40px;
+	padding-top: 40px;
+	margin-bottom: 0;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#mainFooter ul li {
+	width: 100%;
+	margin-top: 10px;
+	font-weight: 700;
+}
+
+
+#mainFooter ul li a {
+	transition: .5s ease;
+}
+
+#mainFooter ul li a:hover {
+	color: #ff3f9f;
+}
+
+#mainFooter span {
+	font-size: .8em;
+	margin-bottom: 40px;
+}
+
+#footer-logo {
+	width: 200px;
+	padding-bottom: 40px;
+	margin-bottom: 0;
+}
+
+/***** FORM STYLING ****/
+
+
+
+form {
+	padding: 0;
+	border: 0;
+	width: 100%;
+	text-align: center;
+
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+}
+
+input {
+	width: 90%;
+	height: 30px;
+	margin-top: 7.5px;
+	margin-bottom: 7.5px;
+	border: 2px solid #fff;
+	background-color: #ff3f9f;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align: center;
+	transition: .5s ease;
+}
+
+textarea {
+	width: 90%;
+	height: 90px;
+	margin-top: 10px;
+	border: 2px solid #fff;
+	background-color: #ff3f9f;
+	color: #fff;
+	margin-bottom: 20px;
+	resize: none;
+	-webkit-appearance: none;
+	transition: .5s ease;
+}
+
+button[type="submit"] {
+	width: 90%; 
+	padding: 10px;
+	color: #ff3f9f;
+	background-color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	border: none;
+	transition: .5s ease;
+}
+
+button[type="submit"]:hover {
+	background-color: #ff3f9f;
+	outline: none;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+::-webkit-input-placeholder { 
+     opacity: .5 !important;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     text-align: center;
+}
+
+::-moz-placeholder { 
+     opacity: .5 !important;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     text-align: center;
+}
+
+:-moz-placeholder { 
+     opacity: .5 !important;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     text-align: center;
+}
+
+:-ms-input-placeholder { 
+     opacity: .5 !important;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     text-align: center;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+    background-color: #fff;
+    color: #ff3f9f;
+}
+
+/***** HALFPAGE STATIC GALLERY BLOCKS ****/
+
+
+
+#welcome-imageBlock {
+	background: url(../img/casa-torre-plants-3.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#about-imageBlock {
+	background: url(../img/casa-torre-window-view.jpg) no-repeat center center;
+	background-size: cover;
+	margin-top: 30px;
+}
+
+#amenities-imageBlock {
+	background: url(../img/casa-torre-jonathon-adler-towels.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#contact-imageBlock {
+	background: url('../img/static-map.png') no-repeat center center;
+	background-size: cover;
+	margin-top: 30px;
+}
+
+
+/***** FULLPAGE GALLERY BLOCKS ****/
+
+
+
+
+#home {
+/*	background: url(../img/casa-torre-ocean-view-palapa-principal.jpg) no-repeat center center;*/
+	background: url(../img/IMG_1778.JPG) no-repeat center center;
+	background-size: cover;
+	padding-top: 20px;
+	margin-top: -100px;
+
+}
+
+#gallery-1-slide-1 {
+	background: url(../img/casa-torre-palapa-principal-ocean-view.jpg) no-repeat center center;
+	background-size: cover;
+}
+#gallery-1-slide-2 {
+	background: url(../img/casa-torre-sunset-view-mobile.jpg) no-repeat center center;
+	background-size: cover;
+}
+#gallery-1-slide-3 {
+	background: url(../img/casa-torre-casita.jpg) no-repeat center center;
+	background-size: cover;
+}
+#gallery-1-slide-4 {
+	background: url(../img/casa-torre-town-view.jpg) no-repeat center center;
+	background-size: cover;
+}
+#gallery-1-slide-5 {
+	background: url(../img/casa-torre-pink-hallway.jpg) no-repeat center center;
+	background-size: cover;
+}
+#gallery-1-slide-6 {
+	background: url(../img/casa-torre-sunset-view-2-mobile.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#gallery-3-slide-1 {
+	background: url(../img/casa-torre-dining-area-ocean-view.jpg) no-repeat center center;
+	background-size: cover;
+}
+#gallery-3-slide-2 {
+	background: url(../img/casa-torre-abstract-4.jpg) no-repeat center center;
+	background-size: cover;
+}
+#gallery-3-slide-3 {
+	background: url(../img/casa-torre-hallway-ocean-view.jpg) no-repeat center center;
+	background-size: cover;
+}
+#gallery-3-slide-4 {
+	background: url(../img/casa-torre-sunset-view-3.jpg) no-repeat center center;
+	background-size: cover;
+}
+#gallery-3-slide-5 {
+	background: url(../img/casa-torre-palapa-principal-from-pool.jpg) no-repeat center center;
+	background-size: cover;
+}
+#gallery-3-slide-6 {
+	background: url(../img/casa-torre-garden-4.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#gallery-2 {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+/*#gallery-3 {
+	background: url(../img/casa-torre-dining-area-ocean-view.jpg) no-repeat center center;
+	background-size: cover;
+}*/
+
+
+
+
+/***** INDIVIDUAL ELEMENTS ****/
+
+#main-logo {
+	text-align: center;
+}
+
+#main-logo img {
+	max-width: 80%;
+	transition: .5s linear;
+}
+
+#main-logo img:hover {
+	transform: translate(0, 10px);
+}
+
+.contentBlock h2 {
+	margin-top: 40px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.contentBlock:last-child {
+	padding-bottom: 40px;
+	margin-bottom: 0; 
+}
+
+
+@media (min-width: 700px) {
+
+	.contentBlock  {
+		width: 70%;
+		align-self: center;
+		-webkit-align-self: center;
+	}
+
+h2 {
+	font-size: 1.4em;
+}
+
+	#mainFooter ul li {
+		width: auto;
+		margin-top: 10px;
+		display: inline-block;
+		margin: 10px;
+	}
+	
+	.imageBlock {
+		height: 60vh;
+	}
+
+
+	.cboxElement {
+	width: 33.333%;
+	height: 25%;
+}
+
+	#main-menu ul {
+		top: 30%;
+	}
+
+	.slick-next {
+
+	right: 50px;
+
+}
+
+.slick-prev {
+
+	left: 30px;
+
+}
+
+
+}
+
+@media (min-width: 1000px) {
+
+	h2 {
+		font-size: 1.6em;
+	}
+
+	.pageBlock {
+		flex-direction: row;
+		-webkit-flex-direction: row;
+		align-items: center;
+		-webkit-align-items: center;
+	}
+
+#about {
+	-webkit-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+}
+
+		.pageBlock p {
+		max-width: 70%;
+	}
+
+	#mainFooter img {
+		margin-left: 0;
+	}
+
+	.imageBlock {
+		width: 70vw;
+		height: 100vh;
+	}
+
+
+
+	.pageBlock {
+		min-height: 50vh;
+	}
+
+	.contentBlock:not(#mainFooter) p {
+		text-align: justify;
+	    -moz-text-align-last: left;
+		text-align-last: left;
+		line-height: 1.5em;
+	}
+
+	.contentBlock:not(#mainFooter) {
+		height: 100vh;
+	}
+
+	.contentBlock h2 {
+		align-self: flex-start;
+		-webkit-align-self: flex-start;
+		margin-left: 15%;
+	}
+
+	.contentBlock img {
+		align-self: flex-start;
+		-webkit-align-self: flex-start;
+		margin-left: 15%;
+	}
+
+		button[type="submit"] {
+		text-align: center;
+		}
+
+		#about-contentBlock {
+			margin-top: 30px;
+		}
+
+	form {
+		width: 80%;
+	}
+
+
+	#home {
+		height: 100vh;
+	}
+
+
+	#gallery-1-slide-1 {
+		background: url(../img/casa-torre-palapa-principal-ocean-view.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	#gallery-1-slide-2 {
+		background: url(../img/casa-torre-sunset-view.jpg) no-repeat bottom center;
+		background-size: cover;
+	}
+	#gallery-1-slide-3 {
+		background: url(../img/casa-torre-casita.jpg) no-repeat center center;		
+		background-size: cover;
+	}
+	#gallery-1-slide-4 {
+		background: url(../img/casa-torre-town-view-mobile.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	#gallery-1-slide-5 {
+		background: url(../img/casa-torre-garden-3.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	#gallery-1-slide-6 {
+		background: url(../img/casa-torre-sunset-view-2.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	#gallery-3-slide-1 {
+		background: url(../img/casa-torre-chuck-ramirez-art.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	#gallery-3-slide-2 {
+		background: url(../img/casa-torre-ocean-view-infinity-pool.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	#gallery-3-slide-3 {
+		background: url(../img/casa-torre-ocean-view-4.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	#gallery-3-slide-4 {
+		background: url(../img/casa-torre-sunset-view-3.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	#gallery-3-slide-5 {
+		background: url(../img/casa-torre-melted-candle.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	#gallery-3-slide-6 {
+		background: url(../img/casa-torre-garden.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+
+
+}
+
+
+@media (min-width: 1250px) {
+
+
+	.cboxElement {
+	height: 33.333%;
+	width: 25%;
+}
+
+
+}
+
+
+
+
+
